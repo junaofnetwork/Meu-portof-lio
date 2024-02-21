@@ -1,4 +1,4 @@
-<p style="font-family: Arial; font-size: 24px;">
+<p style="font-family: Blackletter ; font-size: 24px;">
     Embarque nesta jornada no GitHub, onde linhas de código se entrelaçam para criar um universo de possibilidades. Aqui, cada push é um passo em direção à excelência, e cada pull request é uma oportunidade de crescimento coletivo. Seja bem-vindo(a) à comunidade onde o brilho da criatividade ilumina o caminho da inovação. Juntos, vamos construir o futuro do desenvolvimento de software. Bem-vindo(a) ao GitHub, onde a colaboração é a linguagem universal e o código é a essência da transformação.
 </p>
 <div style="display: inline_block"><br>
