@@ -1,9 +1,13 @@
 
-  ##  Embarque nesta jornada no GitHub, onde linhas de código se entrelaçam para criar um universo de possibilidades. Aqui, cada push é um passo em direção à excelência, e cada pull request é uma oportunidade de crescimento coletivo. Seja bem-vindo(a) à comunidade onde o brilho da criatividade ilumina o caminho da inovação. Juntos, vamos construir o futuro do desenvolvimento de software. Bem-vindo(a) ao GitHub, onde a colaboração é a linguagem universal e o código é a essência da transform
-
+  ## Eai jon Na area
   ________________________________________________________________________________________________________________________________________________________
 
 <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3E1Nm5vdzB2N3gzZGx5ajNiZzl0cWlrdGY5MnI4ZjF1OHNoZjViMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13FrpeVH09Zrb2/giphy.gif" alt="Css GIF" style="width: 500px; height: 481.667px; left: 0px; top: 0px; opacity: 0;">
+
+<img src="https://c.tenor.com/vSKtp3TXlwAAAAAd/tenor.gif" alt="">
+
+
+<img src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-1566.gif" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 540px; height: 302px; margin: 0px; width: 429px;" alt="Anime Gif - IceGif, gif avatars - marazulseguros.com.br" jsname="kn3ccd">
 ___________________________________________________________________________________________________________
 
 <div style="display: inline_block"><br>
