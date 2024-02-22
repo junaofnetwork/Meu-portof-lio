@@ -7,7 +7,7 @@
 <img src="https://c.tenor.com/vSKtp3TXlwAAAAAd/tenor.gif" alt="">
 
 
-<img src="https://www.icegif.com/wp-content/uploads/2023/01/icegif-1566.gif" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 540px; height: 302px; margin: 0px; width: 429px;" alt="Anime Gif - IceGif, gif avatars - marazulseguros.com.br" jsname="kn3ccd">
+
 ___________________________________________________________________________________________________________
 
 <div style="display: inline_block"><br>
