@@ -1,6 +1,6 @@
 function calcularIMC() {
     // 1. Entrada de dados: Pega os valores dos campos de texto
-    const pesoString = document.getElementById("peso").value;
+    const pesoString = document.getElementById("pesos").value;
     const alturaString = document.getElementById("altura").value;
 
     // 2. Converte os valores de texto para números

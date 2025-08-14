@@ -1,5 +1,5 @@
 
-function calcularDesconto(sãoPaulo){
+function calcularDesconto(sãoPaulo2){
 
     //Entrada de dados
     const valorOriginalString = document.getElementById("valor").value;

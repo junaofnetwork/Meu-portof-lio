@@ -2,7 +2,7 @@
 :root {
   /* Paleta de Cores */
   --cor-fundo: #f8f9fa;       /* Cinza muito claro, quase branco */
-  --cor-superficie: #ffffff;   /* Branco para cards, headers, etc. */
+  --cor-superficie: #d6c8c8;   /* Branco para cards, headers, etc. */
   --cor-texto: #212529;       /* Cinza escuro, não preto puro */
   --cor-texto-suave: #6c757d; /* Cinza para texto secundário */
   --cor-primaria: #36ec11;     /* Um azul moderno e acessível */
