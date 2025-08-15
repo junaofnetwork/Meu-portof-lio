@@ -1,74 +1,29 @@
-"""maria=2
-pedro=3
-soma=pedro+maria
-print(soma)"""
-"""A=4
-B=6
-aux=B
-B=A
-A=aux
-print(A, B)"""
+import sys
+from PySide6 import QtWidgets
 
-'''cpf = input("DIgite seu cpf")
-if cpf == 18546023056:
-    print("correto")
-else:
-    print("erouuuu")'''
+# 1. Toda aplicação PySide6 precisa de uma (e apenas uma) instância de QApplication.
+# O sys.argv permite passar argumentos da linha de comando para a aplicação.
+app = QtWidgets.QApplication(sys.argv)
 
+# 2. Crie um widget para ser a janela principal. QWidget é a base de todos os objetos de UI.
+window = QtWidgets.QWidget()
+window.setWindowTitle("Minha Primeira App PySide6") # Define o título da janela
+window.resize(300, 100) # Define o tamanho inicial da janela (largura, altura)
 
-"""numero1 = int(input("primeiro numero"))
-numero2 = int(input("segundo numero"))
-soma=numero1+numero2
-print(soma)"""
-'''import tkinter as tk
-from tkinter import messagebox
+# 3. Crie um layout para organizar os widgets dentro da janela.
+# QVBoxLayout organiza os widgets verticalmente.
+layout = QtWidgets.QVBoxLayout(window)
+botao = QtWidgets.QPushButton("Clique em mim!")
+layout.addWidget(botao)
 
+botao.clicked.connect(lambda: print("Botão clicado!"))  # Exemplo de ação ao clicar no botão
 
-class LoginApp:
-    def __init__(self, root):
-        self.root = root
-        self.root.title("Login")
+# 4. Crie um widget (um rótulo de texto) e adicione-o ao layout.
+label = QtWidgets.QLabel("Olá, Mundo!")
+layout.addWidget(label)
 
-        self.username_label = tk.Label(root, text="Username:")
-        self.username_label.pack()
-        self.username_entry = tk.Entry(root)
-        self.username_entry.pack()
+# 5. Mostre a janela.
+window.show()
 
-        self.password_label = tk.Label(root, text="Password:")
-        self.password_label.pack()
-        self.password_entry = tk.Entry(root, show="*")
-        self.password_entry.pack()
-
-        self.login_button = tk.Button(root, text="Login", command=self.login)
-        self.login_button.pack()
-
-    def login(self):
-        username = self.username_entry.get()
-        password = self.password_entry.get()
-
-        # Here, you can add your authentication logic.
-        # For demonstration, I'm just checking if username and password are not empty.
-        if username != "" and password != "":
-            messagebox.showinfo("Login", "Login successful!")
-        else:
-            messagebox.showerror("Login", "Invalid username or password.")
-
-
-if __name__ == "__main__":
-    root = tk.Tk()
-    app = LoginApp(root)
-    root.mainloop()'''
-'''numero=int(input("digite o numero"))
-valor=int(input("digite o segundo numero"))
-mult=numero*valor
-divisao=numero/valor
-soma=numero+valor
-resto=numero%valor
-print("a multiplicação", mult)
-print("a soma",soma)
-print("a divisão", divisao)
-print("o resto",resto)'''
-
-
-
-
+# 6. Inicie o loop de eventos da aplicação. O programa ficará aqui até a janela ser fechada.
+sys.exit(app.exec())
