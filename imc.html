@@ -7,21 +7,23 @@
     <title>Calculadora de IMC</title>
 </head>
 <body>
-    <h1>Calculadora de IMC</h1>
-
-    <div>
-        <label for="peso">Seu peso (em kg):</label>
-        <input type="text" id="peso" placeholder="Ex: 75.5">
-    </div>
-    <div>
-        <label for="altura">Sua altura (em metros):</label>
-        <input type="text" id="altura" placeholder="Ex: 1.80">
-    </div>
-
-    <button onclick="calcularIMC()">Calcular IMC</button>
-
-    <p id="resultado"></p>
-
+    <main class="container">
+        <h1>Calculadora de IMC</h1>
+        <form>
+            <div class="form-group">
+                <label for="peso">Seu peso (em kg):</label>
+                <input type="text" id="peso" placeholder="Ex: 75.5">
+            </div>
+            <div class="form-group">
+                <label for="altura">Sua altura (em metros):</label>
+                <input type="text" id="altura" placeholder="Ex: 1.80">
+            </div>
+    
+            <button type="button" onclick="calcularIMC()" class="btn btn-primario">Calcular IMC</button>
+    
+            <p id="resultado" style="margin-top: 1.5rem; font-weight: 500;"></p>
+        </form>
+    </main>
     <script src="imc.js"></script>
 </body>
 </html>

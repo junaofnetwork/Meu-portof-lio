@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portofólio - João Eduardo Brandenburg de Almeida</title>
-    <script src="calculadora.js"></script>
     <link rel="stylesheet" href="estilo-moderno.css">
 </head>
 <body>
@@ -17,32 +16,7 @@
                 <li>Tecnico Em informática No <a href="https://vascocoutinho.ceet.secti.es.gov.br/" target="_blank" rel="noopener noreferrer">Ceet vasco Coutinho</a></li>
             </ul>
            
-        </div>
-
-        <section>
-            <h1>Calculadora de Desconto</h1>
-
-    <label for="valor">Valor Original (R$):</label>
-    <input type="number" id="valor" placeholder="Ex: 150.50">
-
-    <br><br>
-
-    <label for="desconto">Desconto (%):</label>
-    <input type="number" id="desconto" placeholder="Ex: 10">
-
-    <br><br>
-
-    <button onclick="calcularDesconto()">Calcular</button>
-
-    <h2 id="resultado"></h2>
-
-    <!-- A mágica acontece aqui! Conectando seu arquivo JavaScript -->
-    <script src="calculadora.js"></script>
-
-        </section>
-        
-    
-        
+        </div>        
     </header>
 
     <main class="container">
@@ -51,24 +25,70 @@
             <p>Olá! Sou um desenvolvedor Full Stack com foco em Python, apaixonado por transformar ideias em soluções digitais. Vindo do Espírito Santo, trago uma grande curiosidade e criatividade para cada projeto, gostando de atuar tanto no front-end quanto no back-end para criar experiências completas e funcionais. É um prazer ter você aqui!</p>
         </section>
 
-        <section class="contact-section">
+        <section>
+            <h2>Calculadora de Desconto</h2>
+            <form>
+                <div class="form-group">
+                    <label for="valor">Valor Original (R$):</label>
+                    <input type="number" id="valor" placeholder="Ex: 150.50">
+                </div>
+                <div class="form-group">
+                    <label for="desconto">Desconto (%):</label>
+                    <input type="number" id="desconto" placeholder="Ex: 10">
+                </div>
+                <button type="button" onclick="calcularDesconto()" class="btn btn-primario">Calcular</button>
+                <h3 id="resultado" style="margin-top: 1rem;"></h3>
+            </form>
+        </section>
+
+        <section>
             <h2>Entre em Contato</h2>
             <p>Tem alguma pergunta ou quer trabalhar comigo? Preencha o formulário abaixo.</p>
             <!-- IMPORTANTE: Cole aqui o URL que você copiou do Formspree -->
-            <form  action="https://formspree.io/f/mnnzldrn" method="POST" class="contact-form">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
-                
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Deixe sua mensagem aqui..." required></textarea>
-                
+            <form action="https://formspree.io/f/mnnzldrn" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Deixe sua mensagem aqui..." required></textarea>
+                </div>
                 <button type="submit" class="btn btn-primario">Enviar Mensagem</button>
             </form>
-            
+        </section>
 
+        <section>
+            <h2>Controle de gastos</h2>
+            <form>
+                <div class="form-group">
+                    <label for="gasto-valor">Valor do Gasto (R$)</label>
+                    <input id="gasto-valor" type="number" placeholder="Digite o Valor de gastos" required>
+                </div>
+                <div class="form-group">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria">
+                        <option value="" disabled selected>Selecione a categoria</option>
+                        <option value="alimentacao">Alimentação</option>
+                        <option value="transporte">Transporte</option>
+                        <option value="lazer">Lazer</option>
+                        <option value="saude">Saúde</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+                <button type="button" onclick="adicionarGasto()" class="btn btn-primario">Adicionar Gasto</button>
+            </form>
+            <div class="resultados-gastos" style="margin-top: 1.5rem;">
+                <p id="Alimentação">Alimentação: R$0,00</p>
+                <p id="Transporte">Transporte: R$0,00</p>
+                <p id="Lazer">Lazer: R$0,00</p>
+                <p id="Saúde">Saúde: R$0,00</p>
+                <p id="Outros">Outros: R$0,00</p>
+            </div>
         </section>
 
     </main>
@@ -86,8 +106,12 @@
             <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.584.069-4.85c.149-3.225 1.664-4.771 4.919-4.919 1.266-.057 1.644-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/></svg>
             </a>
-             <p>&copy; 2025 João Eduardo Brandenburg de Almeida - Todos os direitos reservados</p>
         </div>
+        <p>&copy; 2025 João Eduardo Brandenburg de Almeida - Todos os direitos reservados</p>
     </footer>
+
+    <script src="calculadora.js"></script>
+    <script src="for.js"></script>
+    <script src="gastos.js"></script>
 </body>
 </html>

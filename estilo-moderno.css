@@ -189,6 +189,53 @@ footer {
   box-shadow: var(--sombra-suave);
 }
 
+/* --- Formulários --- */
+/* Para um formulário centralizado e com boa aparência, use a tag <form> dentro de um .container */
+form {
+  background-color: var(--cor-superficie);
+  padding: 2rem;
+  border-radius: var(--raio-borda);
+  box-shadow: var(--sombra-suave);
+  max-width: 600px; /* Define uma largura máxima para o formulário */
+  margin: 2rem auto; /* Centraliza o formulário na página */
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-borda);
+  transition: var(--transicao-suave);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--cor-primaria);
+  box-shadow: 0 0 0 3px rgba(54, 236, 17, 0.2); /* Sombra de foco sutil com a cor primária */
+}
+
 /* --- Imagens e Mídia --- */
 img, video, svg {
   max-width: 100%;
@@ -209,4 +256,17 @@ img, video, svg {
   Para usar o botão, adicione as classes "btn" e "btn-primario" a um link ou botão.
   Exemplo:
   <a href="#" class="btn btn-primario">Saiba Mais</a>
+
+  Para criar um formulário com a nova aparência, use uma estrutura como esta:
+  <form>
+    <div class="form-group">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <button type="submit" class="btn btn-primario">Enviar</button>
+  </form>
 */
